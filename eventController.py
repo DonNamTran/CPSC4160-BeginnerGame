@@ -6,10 +6,10 @@ class EventController:
     def __init__(self, model, view):
         self.model = model
         self.view = view
-        pass
 
+    #moves the object based on the input given.
     def move_object(self, gameObject):
-        self.model.player_gameRect.clamp_ip(self.view.surface.get_rect())
+        gameObject.clamp_ip(self.view.surface.get_rect())
         keys = pygame.key.get_pressed()
         if keys[pygame.K_UP] and keys[pygame.K_LEFT]:
             print("up left pressed !!!")
@@ -39,6 +39,4 @@ class EventController:
         elif keys[pygame.K_DOWN]:
             print("down pressed !!!")
             gameObject.move_ip(0,self.model.player_rectSpeed)
-        pass
-        pass
     
