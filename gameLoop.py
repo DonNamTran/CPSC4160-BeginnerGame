@@ -5,10 +5,10 @@ from model import *
 
 
 class gameLoop:
-    pygame.init()
+    
     def __init__(self):
         print("what up")
-
+        pygame.init()
         #creates the mode, view, and events object
         model = Model()
         view = View(model)
