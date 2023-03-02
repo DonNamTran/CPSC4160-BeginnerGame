@@ -1,3 +1,5 @@
+#Game Image
+![gameimg](https://user-images.githubusercontent.com/100445003/222320085-9e86e8fa-c0b5-4e6a-b2cd-4509917317c5.png)
 # CPSC4160-BeginnerGame
 Basic game engine creation to understand the Model-View-Controller design archetype. 
 
@@ -14,6 +16,7 @@ We wanted to follow the Model-View-Controller design archetype that we learned i
 
 # Image
 The View class displayed onto the screen the objects from model class, the objects inside of model class were changed inside of the eventController class. 
+![image](https://user-images.githubusercontent.com/100445003/222320064-ba1c9a10-b834-41fa-9c44-a1aef786be91.png)
 
 # Future Work
 We have a cleaner way of displaying the score onto the screen where the ball doesn't get hidden behind it. We could also add a start game button, as well as some sort of way to win or lose the game instead of the score just counting infinitely. In terms of generalization, we have a good Model-View-Controller layout set up already. In the future we could store the objects inside some sort of array, to make updating them simipler than just manually editing each object involved in the game. 
