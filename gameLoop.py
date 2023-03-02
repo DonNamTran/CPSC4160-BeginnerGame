@@ -3,33 +3,27 @@ from view import *
 from eventController import *
 from model import *
 
-
+#This is the class that defines our game-loop. It has the model, view, and controller objects.
 class gameLoop:
-    
     def __init__(self):
-        print("what up")
         pygame.init()
         #creates the mode, view, and events object
         model = Model()
         view = View(model)
+        model.setViewObject(view)
+        model.initializeObjects()
         events = EventController(model, view)
 
         #game loop
         while True:
 
-            #handles the player closing the game
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
-
             #calls the method in view that updates the screen. 
             view.updateScreen()
 
-            #calls the method to move the player rectangle. 
-            events.move_object(model.player_gameRect)
-
-
+            #calls the methods to move the player, opponent, and the ball.
+            events.movePlayer()
+            events.moveOpponent()
+            events.moveBall()
 
 #Main method that starts the gameLoop
 def main():
