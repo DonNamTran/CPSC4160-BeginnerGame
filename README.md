@@ -3,10 +3,10 @@
 # CPSC4160-BeginnerGame
 Basic game engine creation to understand the Model-View-Controller design archetype. 
 
-# Program Verions
-OS Version: Windows 10
-Python Version: 3.8.10
-Pygame Version: 2.2.0
+# Program Versions
+OS Version: Windows 10  
+Python Version: 3.8.10  
+Pygame Version: 2.2.0  
 
 # Motivation
 We wanted to create a simple game for our first assignment. This type of game gives us the fundamentals of game-engine development. We were able to implement simple physics with the ball, have an AI opponenet, and have a moveable player character. 
